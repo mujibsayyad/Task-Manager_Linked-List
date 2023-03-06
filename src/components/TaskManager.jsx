@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import SinglyLinkedList from './LinkedList';
 
+import PixiImage from '/public/pixi.png';
+
 let list = new SinglyLinkedList();
 
 function TaskManager() {
@@ -69,7 +71,7 @@ function TaskManager() {
   return (
     <div className='main'>
       <div className='text'>
-        <img className='pixi' src='/public/pixi.png' alt='pixi' />
+        <img className='pixi' src={PixiImage} alt='pixi' />
         <h1>Task Manager</h1>
         <p>Made Using Singly Linked List</p>
       </div>
