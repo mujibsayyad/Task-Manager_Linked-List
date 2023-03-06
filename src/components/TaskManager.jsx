@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import SinglyLinkedList from './LinkedList';
 
-import PixiImage from '/public/pixi.png';
+import PixiImage from '../assets/pixi.png';
 
 let list = new SinglyLinkedList();
 
@@ -28,7 +28,7 @@ function TaskManager() {
 
   // save to localStorage whenever item array changes
   useEffect(() => {
-    localStorage.setItem('todo', JSON.stringify(item.toString()));
+    localStorage.setItem('todo', JSON.stringify(item));
   }, [item]);
 
   // Function to add a new task
